@@ -1,0 +1,17 @@
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+%\definecolor{textadded}{rgb}{0.09, 0.45, 0.27}
+\definecolor{textadded}{rgb}{0.0, 0.5, 0.0}
+\definecolor{textmodified}{rgb}{0.0, 0.0, 0.61}
+\definecolor{textremoved}{rgb}{1.0, 0.03, 0.0}
+
