@@ -1,13 +1,8 @@
 \chapter{Referencial Teórico}
 \label{chap:ref}
 
-% apresentar o livros e citar artigos
 
-
-Neste capítulo são apresentados os conceitos base que envolvem este trabalho. São tratadas a teoria relacionada às personas (Seção \ref{sec:personas}) e as características dos jogos para aprendizagem (Seção \ref{sec:jogos-aprend}). %Além disto são apresentados trabalhos correlatos na Seção \ref{sec:trab_cor}. 
-
-% fazer comparação às personas, talvez até na discussão
-% - cenários, perfil de usuário, modelagem de tarefas e um outro lá
+Neste capítulo são apresentados os conceitos base que envolvem este trabalho. São tratadas a teoria relacionada às personas (Seção \ref{sec:personas}) e as características dos jogos para aprendizagem (Seção \ref{sec:jogos-aprend}). Além disto são apresentados trabalhos correlatos na Seção \ref{sec:trab_cor}. 
 
 \section{Personas}
 \label{sec:personas}
@@ -20,12 +15,15 @@ As personas são personagens fictícios, arquétipos hipotéticos de um grupo de
 
 \begin{figure}[htbp]
 	\centering
+	\caption{Exemplo de uma persona}
 	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/metodologia/exemplo-persona.png}
-	\caption{Exemplo de uma persona - \citeonline{barbosa_silva}}
+	\legend{ Fonte: \citeonline{barbosa_silva} }
 	\label{Fig:ex-persona.png}
 \end{figure}
 
-Elas são definidas a partir de dados de pesquisa de campo, ou seja, as personas refletem as características de pessoas reais. Elas se caracterizam por atributos demográficos como sexo e faixa etária, atendem por um nome, além de conterem aspectos comportamentais, motivação e objetivos \cite[p. 81]{Vianna_2014}. Como é definido por \citeonline{Courage_Baxter_2005}, citado por \cite[p. 153-154]{BarbosaEtAl2021} uma persona possui as seguintes características: 
+Elas são definidas a partir de dados de pesquisa de campo, ou seja, as personas refletem as características de pessoas reais. A pesquisa de campo envolve a coleta e uma pré-analise sobre o público-alvo, etapas as quais precedem a construção das personas \cite{usability2020}. 
+
+Elas se caracterizam por atributos demográficos como sexo e faixa etária, atendem por um nome, além de conterem aspectos comportamentais, motivação e objetivos \cite[p. 81]{Vianna_2014}. Como é definido por \citeonline{Courage_Baxter_2005}, citado por \cite[p. 153-154]{BarbosaEtAl2021} uma persona possui as seguintes características: 
 
 \begin{itemize}
     \item \textbf{identidade:} para dar mais realismo à persona, é importante que ela tenha um nome, idade, outros dados demográficos e uma foto;
@@ -47,9 +45,9 @@ Elas são definidas a partir de dados de pesquisa de campo, ou seja, as personas
 
 Como as personas partem de um processo de investigação das características dos usuários e descrição de seu perfil, a eficiência dessa ferramenta de design está atrelada ao quão próxima a persona se encontra de uma pessoa real e o quanto ela representa o seu público-alvo \cite[p. 154]{BarbosaEtAl2021}. 
 
-Em um projeto podem haver várias personas distintas, que cada qual com seu papel irão auxiliar os designer. Na subseção a seguir este grupo de personas é melhor explorado.
+Em um projeto podem haver um grupo de personas. Existem tipos distintos de personas, as quais tem um papel e prioridade sobre as outras \cite[p. 154]{BarbosaEtAl2021}. Na subseção a seguir este grupo de personas é melhor explorado.
 
-\subsection{Elenco das Personas}
+\subsection{Elenco de Personas}
 
 O grupo de personas de um projeto, também chamado de elenco de personas, conta com pelo menos três personas distintas como é definido por \citeonline{Courage_Baxter_2005} e \citeauthor{usability2020}, podendo ser de seis tipos, conforme foi descrito por \citeonline{cooper07}. São estes os tipos de personas:
 
@@ -91,9 +89,9 @@ O \textit{Playcentric Design Process} (PDP) é um método de desenvolvimento de 
 
 O PDP se baseia num ciclo iterativo, no qual continuamente é prototipado, testado e validado o que foi concebido para o jogo, sempre tendo em vista as metas de experiência \cite[p. 10-11]{Fullerton_2008}. Este método acompanha a visão de IHC que preocupa-se com certos critérios de qualidade da interação entre seres humanos e sistemas digitais \cite[p. 8-10]{BarbosaEtAl2021}.
 
-\citeonline{BarbosaEtAl2021} apontam que "os critérios de qualidade de uso enfatizam certas características da interação e da interface que as tornam adequadas aos efeitos esperados do uso do sistema". São critérios de qualidade, a usabilidade e a experiência do usuário (UX).
+\citeonline{BarbosaEtAl2021} apontam que ``os critérios de qualidade de uso enfatizam certas características da interação e da interface que as tornam adequadas aos efeitos esperados do uso do sistema". São critérios de qualidade, a usabilidade e a experiência do usuário (UX).
 
-\citeonline{Petri_Wangenheim_2019} abordam em seus estudos a questão da qualidade em jogos educacionais e trazem como produto de suas pesquisas um modelo denominado Model for the Evaluation of Educational Games (MEEGA+). Este é um instrumento de avaliação da qualidade de jogos no ensino de informática que contempla fatores de usabilidade e experiência do jogador.
+\citeonline{Petri_Wangenheim_2019} abordam em seus estudos a questão da qualidade em jogos educacionais e trazem como produto de suas pesquisas um modelo denominado Model for the Evaluation of Educational Games (MEEGA+). Este é um instrumento de avaliação da qualidade de jogos no ensino de informática que contempla fatores de usabilidade e experiência do jogador (Anexo \ref{an:meega}).
 
 Os fatores de qualidade do MEEGA+ ainda são decompostos em dimensões. Estas dimensões descrevem as características dos jogos educacionais que impactam na qualidade deles \cite{Petri_Wangenheim_2019}.
 
@@ -101,19 +99,33 @@ Outro estudo similar que aborda a caracterização de jogos para aprendizagem é
 
 Estas características de jogos, tal como suas respectivas relevâncias, foram observadas no estudo de \citeonline{silva_sales_mendes2021} como aspectos de qualidade. Estes aspectos refletem critérios, princípios de \textit{design} \cite{nielsen1994, ISO9126-1, BarbosaEtAl2021}, metas de usabilidade e aspectos de experiência desejáveis do usuário \cite{Preece_Rogers_Sharp_2005} identificados na Engenharia de Software (ES) e em IHC.
 
-Estes aspectos de qualidade são para os designers e desenvolvedores, os insumos fundamentais do processo de desenvolvimento para esse tipo de \textit{software} \cite{silva_sales_mendes2021}. Na Engenharia de Software esta etapa de entendimento inicial dos elementos que envolvem o tema do projeto de um software é denominada de concepção do projeto \cite[p. 127]{Pressman_2000}.
+Estes aspectos de qualidade são para os designers e desenvolvedores, os insumos fundamentais do processo de desenvolvimento para esse tipo de \textit{software} \cite{silva_sales_mendes2021}. Neste processo, a Engenharia de Software aborda, a etapa de entendimento dos elementos que envolvem o tema do projeto de um software é denominada de concepção do projeto \cite[p. 127]{Pressman_2000}.
 
-Após a concepção inicial, os aspectos de qualidade ganham forma, sendo especificamente modelados para determinado projeto \cite[p. 151]{BarbosaEtAl2021}. A exemplo de modelagem existem as personas que no caso incorporam estes aspectos de qualidade aos seus atributos \cite[p. 154]{BarbosaEtAl2021}.
+Após a concepção, os aspectos de qualidade ganham forma, sendo especificamente modelados para determinado projeto \cite[p. 151]{BarbosaEtAl2021}. A exemplo de modelagem existem as personas, que no caso incorporam estes aspectos de qualidade \cite[p. 154]{BarbosaEtAl2021}.
 
 No desenvolvimento de um software estes aspectos de qualidade podem ser traduzidos para requisitos não funcionais \cite{swebok2014} e para as metas de experiência do usuário, as quais fazem parte de atividades na engenharia de software, como a prototipação, inspeção, validação e testes \cite{Pressman_2000}.
 
-%\section{Trabalhos Correlatos}
-%\label{sec:trab_cor}
+\section{Trabalhos Correlatos}
+\label{sec:trab_cor}
 
-% trazer aqui trabalhos sobre a construção de personas, sobre o uso de personas no desenvolvimento de design de interfaces ou de jogos
+Nesta seção são apresentados trabalhos que têm algumas similaridades com o presente estudo. Estes envolvem a construção de personas para o desenvolvimento de um jogo, outro para um jogo na educação e ainda um que trata do uso de \textit{survey} para se elaborar personas.
 
-% pesquisas do projeto de recursos didáticos
+No trabalho de \citeonline{canossa-2009} personas são desenvolvidas com o intuito de solucionar o desafio de integrar o usuário ao design de entretenimento interativo (jogos de computador). Este trabalho utiliza a estrutura introduzida por \citeonline{cooper99}.
 
-% trabalhos sobre personas que saíram agora na conferencia Ibero americana
+As personas desenvolvidas neste estudo são conhecidas também como \textit{play-personas}. Com base num estudo de caso da pesquisa de \citeonline{canossa-2009}, as \textit{play-personas} se mostraram como modelos de hipótese preliminar de comportamento no jogo e uma ferramenta para categorizar e analisar variáveis de métricas de jogo vinculadas ao personagem.
 
-No Capítulo \ref{chap:Metodo} estão apresentadas a metodologia adotada neste trabalho.
+A estrutura adotada para a \textit{play-persona} agrega os dados coletados, vinculando-os aos aspectos de jogos. Estes aspectos vão além de meras recompensas e punições, mas sim, envolvem desafios e habilidades referentes a um público indistinto em geral \cite{canossa-2009}.
+
+Outro trabalho que liga jogos e personas, é o estudo de \citeonline{salminen-2020}. Este estudo conta com a aplicação de uma pesquisa com \textit{survey} para coleta de dados que serviram de insumo par a construção das personas. 
+
+Assim foram geradas personas de forma automática, a partir da base de dados de preferências de jogos e demais características dos usuários, coletadas via formulário digital \cite{salminen-2020}.
+
+As personas resultantes podem ser aplicadas direcionando os jogadores, com publicidade em mídia social, para jogos de sua preferência. Além disso elas também podem ser usadas para compreender a variação demográfica entre vários padrões de preferência de jogo \cite{salminen-2020}.
+
+Por último, mas não menos importante o trabalho de \citeonline{Salomao_2015} usou da técnica de personas para o desenvolvimento do protótipo de um jogo digital e na continuação deste trabalho \cite{Salomao_2016}, o próprio jogo foi desenvolvido e então as personas avaliadas para se ter o entendimento se de fato elas refletiram os jogadores.
+
+Neste trabalho \cite{Salomao_2015} os dados das personas foram coletados e analisados a partir de 30 entrevistas com potenciais usuários (estudantes internacionais que residiam no Brasil e Portugal com interesse em aprender português como língua estrangeira). Estes tiveram elementos repetidos como itens mais citados na análise de conteúdo pelo grupo de alunos (entrevistas de falantes de espanhol morando no México) que avaliaram a versão final do jogo. Essa evidência indica a robustez da Persona que norteou o design do jogo \cite{Salomao_2016}.
+
+Estes trabalhos apresentam diferentes abordagens do uso de personas no processo de design de jogos. \citeonline{canossa-2009} apresenta a perspectiva centrada no usuário envolvendo aspectos de jogos e experiências do jogador em sua análise. Já \citeonline{salminen-2020} envolve o uso do \textit{survey} para coleta dos dados utilizados na modelagem das personas. E \citeonline{Salomao_2015, Salomao_2016} apresentam o uso e a avaliação das personas usadas no projeto de um jogo na educação.
+
+No presente trabalho, tanto a visão centrada no usuário, envolvendo aspectos de qualidade de jogos, quanto o uso do \textit{survey} como procedimento para coleta dos dados para a construção das personas e o objetivo de se desenvolver um jogo para aprendizagem, são aqui abordados. Dito isto, no Capítulo \ref{chap:Metodo} estão apresentadas as metodologias adotadas neste trabalho.

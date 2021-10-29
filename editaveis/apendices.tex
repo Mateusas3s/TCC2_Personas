@@ -5,13 +5,13 @@
 \chapter{Questionário de Pesquisa}
 \label{ap:questionario}
 
-Este apêndice mostra as perguntas do questionário (Tabela \ref{tab:quest-survey}), instrumento de coleta usado na pesquisa com \textit{survey}. 
+Este apêndice apresenta o questionário de pesquisa (Tabela \ref{tab:quest-survey}), instrumento de coleta de dados usado na pesquisa com \textit{survey}. Esta é uma versão resumida, a versão completa encontra-se em: \url{https://github.com/RecursosDigitaisdeEnsinoAprendizagemIHC/research-pack-hci-games}.
 
 \begin{table} [!h]
 \centering
 \caption{Perguntas do Questionário de Pesquisa}
 \label{tab:quest-survey}
-\begin{tabular}{|p{16cm}|}
+\begin{tabular}{|p{15.45cm}|}
 \hline
 
 \textbf{Seção do Questionário - Dados Demográficos} \\ \hline
@@ -31,11 +31,11 @@ O01 - Em relação à disciplina de Interação Humano-Computador (IHC):\\ \hlin
 H01 - Qual sua experiência com design de interfaces de software ou aplicativos?
 \\ \hline
 
-H02 -  Quais as atividades você já exerceu no processo de design de interfaces?
-\\ \hline
+% H02 -  Quais as atividades você já exerceu no processo de design de interfaces?
+% \\ \hline
 
-H03 - Sobre o uso da técnica de personas:
-\\ \hline
+% H03 - Sobre o uso da técnica de personas:
+% \\ \hline
 
 RL01 - O que você costuma fazer para sanar as dúvidas sobre algum conteúdo?
 \\ \hline
@@ -81,62 +81,67 @@ E01 - Qual a importância destes elementos para uma boa experiência com estes j
 
 \end{table}
 
-Este questionário segue uma lógica condicional a partir da questão O02. Ao optar por algumas das opções desta questão o respondente é encaminhado para uma ramificação distinta. Ao selecionar a opção ``Já usei, mas não jogo mais” o respondente é direcionado para questão O02.1.1; caso opte ``Eu uso” ele continua da questão O02.2.1; caso opte ``Não uso, mas tenho interesse em jogar” o respondente segue para questão O02.3.1, mas se optar por ``Não uso e não tenho interesse em jogar” ele é direcionado para O02.4.1. 
+Este questionário segue uma lógica condicional a partir da questão O02 (Tabela \ref{tab:quest-survey}). Ao responder esta questão o respondente é encaminhado para uma seção distinta do questionário, de acordo com sua resposta. As opções da questão O02 são as seguintes: opção 1, ``Já usei, mas não jogo mais”, a qual o respondente é direcionado para questão O02.1.1 (Seção do Questionário - Perfil do usuário que jogava da Tabela \ref{tab:quest-survey}); opção 2, ``Eu uso”, a qual o respondente irá continuar na questão O02.2.1 (Seção do Questionário - Perfil do Usuário que Joga da Tabela \ref{tab:quest-survey}); opção 3, ``Não uso, mas tenho interesse em jogar”, a qual o respondente segue para questão O02.3.1 (Seção do Questionário - Perfil de usuário que nunca jogou da Tabela \ref{tab:quest-survey}); e a opção 4, ``Não uso e não tenho interesse em jogar”, a qual ele é direcionado para O02.4.1 (Seção do Questionário - Perfil do usuário que não tem interesse da Tabela \ref{tab:quest-survey}). 
 
-Dependendo da opção selecionada quando o participante da pesquisa responder a algumas destas questões O02.1.4, O02.2.3, O02.3.2 ou O02.4.1 o respondente continuará a responder a partir da questão RE01.
+Depois de seguir para uma determinada seção, o respondente segue o fluxo de perguntas da respectiva seção. Dependendo de qual esteja, ao responder a algumas destas questões O02.1.4, O02.2.3, O02.3.2 ou O02.4.1, ele é direcionado à ultimação seção do questionário, partindo da questão RE01 (Seção do Questionário - Caraterísticas de um jogo. Fatores de Usabilidade e Experiência do Jogador da Tabela \ref{tab:quest-survey}).
 
 
 %-------------------Tabela RQ -------------------
 
-Na Tabela \ref{tab:req-qualit} são apresentados os requisitos de qualidade apreciados pelos jogadores referentes aos item da questão RE01 da Tabela \ref{tab:quest-survey}.
+Na questão RE01 o respondente classifica alguns elementos de acordo com sua relevância nos jogos. Na Tabela \ref{tab:req-qualit} são apresentados estes elementos, os requisitos de qualidade apreciados pelos jogadores referentes aos item da questão RE01 da Tabela \ref{tab:quest-survey}. 
 
 \begin{table}[htbp]
 \centering
 \caption{Requisitos de Qualidade Apreciados pelos Jogadores}
 \label{tab:req-qualit}
-\begin{tabular}{clcl}
+\begin{tabular}{|p{1cm}|p{7cm}|p{1.5cm}|}
 \hline
-\multicolumn{1}{|c|}{\textbf{Identificador}} & \multicolumn{1}{l|}{\textbf{Requisito de Qualidade}} \\ \hline
-\multicolumn{1}{|c|}{01}                  & \multicolumn{1}{l|}{\textit{Design} do jogo atraente} \\ \hline
-\multicolumn{1}{|c|}{02}                  & \multicolumn{1}{l|}{Padrão de \textit{design} consistente}  \\ \hline
-\multicolumn{1}{|c|}{03}                  & \multicolumn{1}{l|}{Facilidade em aprender a jogar}   \\ \hline
-\multicolumn{1}{|c|}{04}                  & \multicolumn{1}{l|}{Facilidade em jogar}   \\ \hline
-\multicolumn{1}{|c|}{05}                  & \multicolumn{1}{l|}{Regras fáceis e claras de se entender} \\ \hline
-\multicolumn{1}{|c|}{06}                  & \multicolumn{1}{l|}{Fontes usadas serem fáceis de ler}   \\ \hline
-\multicolumn{1}{|c|}{07}                  & \multicolumn{1}{l|}{Uso adequado das cores}   \\ \hline
-\multicolumn{1}{|c|}{08}                  & \multicolumn{1}{l|}{Acessibilidade}  \\ \hline
-\multicolumn{1}{|c|}{09}                  & \multicolumn{1}{l|}{Oferece \textit{feedback} ao jogador}           \\ \hline
-\multicolumn{1}{|c|}{10}                  & \multicolumn{1}{l|}{Possui uma narrativa ou história}     \\ \hline
-\multicolumn{1}{|c|}{11}                  & \multicolumn{1}{l|}{Oferece pontos e recompensas}    \\ \hline
-\multicolumn{1}{|c|}{12}                  & \multicolumn{1}{l|}{Apresenta \textit{ranking} dos jogadores}  \\ \hline
-
+\textbf{ID}& \textbf{Requisito de Qualidade} & Fonte \\ \hline
+01             & \textit{Design} do jogo atraente & PW, SS\\ \hline
+02             & Padrão de \textit{design} consistente & PW\\ \hline
+03             & Facilidade em aprender a jogar & PW, SS  \\ \hline
+04             & Facilidade em jogar & PW  \\ \hline
+05             & Regras fáceis e claras de se entender & PW \\ \hline
+06             & Fontes usadas serem fáceis de ler & PW \\ \hline
+07             & Uso adequado das cores & PW \\ \hline
+08             & Acessibilidade & PW \\ \hline
+09             & Oferece \textit{feedback} ao jogador  & SS \\ \hline
+10             & Possui uma narrativa ou história  &  SS \\ \hline
+11             & Oferece pontos e recompensas  & SS \\ \hline
+12             & Apresenta \textit{ranking} dos jogadores & SS \\ \hline
 \end{tabular}
+
+\legend{Legenda: SS - \citeonline{deSales_SousaeSilva_2020}; PW - \citeonline{Petri_Wangenheim_2019}} 
 \end{table}
 
 %-------------------Tabela PX -------------------
 
-Na Tabela \ref{tab:exp-player} são apresentados os requisitos de qualidade apreciados pelos jogadores referentes aos item da questão E01 da Tabela \ref{tab:quest-survey}.
+Estes são os requisitos não funcionais, originários do trabalho de \citeonline{deSales_SousaeSilva_2020}, identificados pela legenda SS (Tabela \ref{tab:req-qualit}) e os fatores de usabilidade do modelo MEEGA+ \cite{Petri_Wangenheim_2019}, identificados pela legenda PW (Tabela \ref{tab:req-qualit}).
+
+\newpage
+
+Já na questão E01 o respondente classifica mais alguns outros elementos de acordo com sua importância nos jogos. Na Tabela \ref{tab:exp-player} são apresentados estes elementos, as experiências apreciadas pelo jogador referentes aos item da questão E01 da Tabela \ref{tab:quest-survey}.
 
 \begin{table}[htbp]
 \centering
 \caption{ Experiência Apreciada pelos Jogadores}
 \label{tab:exp-player}
-\begin{tabular}{clcl}
+\begin{tabular}{|p{1cm}|p{8.5cm}|p{1.5cm}|}
 \hline
-\multicolumn{1}{|c|}{\textbf{Identificador}} & \multicolumn{1}{l|}{\textbf{Experiência apreciada pelos jogadores}}  \\ \hline
-\multicolumn{1}{|c|}{1}                   & \multicolumn{1}{l|}{Ter confiança de que aprenderei o conteúdo}     \\ \hline
-\multicolumn{1}{|c|}{2}                   & \multicolumn{1}{l|}{Me sentir desafiado}                  \\ \hline
-\multicolumn{1}{|c|}{3}                   & \multicolumn{1}{l|}{Sentir satisfação em jogar e aprender}         \\ \hline
-\multicolumn{1}{|c|}{4}                   & \multicolumn{1}{l|}{Interagir com outros jogadores}             \\ \hline
-\multicolumn{1}{|c|}{5}                   & \multicolumn{1}{l|}{Me divertir}                                   \\ \hline
-\multicolumn{1}{|c|}{6}                   & \multicolumn{1}{l|}{Ter a atenção focada durante o jogo}            \\ \hline
-\multicolumn{1}{|c|}{7}                   & \multicolumn{1}{l|}{Perceber a relevância do conteúdo ensinado}      \\ \hline
-\multicolumn{1}{|c|}{8}                   & \multicolumn{1}{l|}{O jogo como o principal meio de aprendizagem}        \\ \hline
-                                                                                                    
+\textbf{ID} & \textbf{Experiência apreciada pelos jogadores} & Fonte \\ \hline
+1                 & Ter confiança de que aprenderei o conteúdo & PW  \\ \hline
+2                 & Me sentir desafiado        &  PW, SS        \\ \hline
+3                 & Sentir satisfação em jogar e aprender & PW, SS \\ \hline
+4                 & Interagir com outros jogadores    &   PW, SS     \\ \hline
+5                 & Me divertir           &   PW, SS             \\ \hline
+6                 & Ter a atenção focada durante o jogo    &  PW    \\ \hline
+7                 & Perceber a relevância do conteúdo ensinado & PW   \\ \hline
+8                 & O jogo como o principal meio de aprendizagem  & PW  \\ \hline
 \end{tabular}
+\legend{Legenda: SS - \citeonline{deSales_SousaeSilva_2020}; PW - \citeonline{Petri_Wangenheim_2019}}                                       
 \end{table}
 
-A versão completa do questionário encontra-se no repositório: \url{https://github.com/RecursosDigitaisdeEnsinoAprendizagemIHC/research-pack-hci-games}.
+Estas são as experiências de usuário, apresentadas no trabalho de \citeonline{deSales_SousaeSilva_2020}, identificados pela legenda SS (Tabela \ref{tab:req-qualit}) e os fatores de experiência do jogador do modelo MEEGA+ \cite{Petri_Wangenheim_2019}, identificadas pela legenda PW (Tabela \ref{tab:req-qualit}).
 
 %nas Figuras \ref{Fig:survey1.png}, \ref{Fig:survey2.png} e \ref{Fig:survey3.png}.
 
