@@ -1,0 +1,27 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[htbp]
+\centering
+\caption{Características Demográficas}
+\label{tab:carac-demo}
+\begin{tabular}{|l|c|c|cc|cc|}
+\hline
+\multirow{\textbf{Idade}} & \textbf{Mínimo}    & \textbf{Quartil Inf.} & \multicolumn{2}{c|}{\textbf{Quartil Sup.}} & \multicolumn{2}{c|}{\textbf{Máximo}}        \\ \cline{2-7} 
+                                & 18                 & 20                     & \multicolumn{2}{c|}{23}                     & \multicolumn{2}{c|}{53}                     \\ \hline
+\multirow{\textbf{Sexo}}  & \textbf{Masculino} & \textbf{Feminino}        & \multicolumn{2}{c|}{\textbf{Outro}}         & \multicolumn{2}{c|}{\textbf{Não Respondeu}} \\ \cline{2-7} 
+                                & 128                & 36                     & \multicolumn{2}{c|}{1}                      & \multicolumn{2}{c|}{1}                      \\ \hline
+\multirow{
+    \begin{tabular}[c]{@{}l@{}}\\
+        \textbf{Instituição}\\ \textbf{de Ensino}
+    \end{tabular}
+    } &
+  \textbf{UnB} &
+  \textbf{UFMS} &
+  \multicolumn{1}{c|}{\textbf{UFAM}} &
+  \textbf{UFMT} &
+  \multicolumn{1}{c|}{\textbf{UCSAL}} &
+  \textbf{UTFPR} \\ \cline{2-7} 
+                                & 126                & 24                     & \multicolumn{1}{c|}{10}         & 4         & \multicolumn{1}{c|}{1}          & 1         \\ \hline
+\end{tabular}
+\legend{Fonte: Autor}
+\end{table}

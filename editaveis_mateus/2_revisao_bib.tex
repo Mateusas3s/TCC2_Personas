@@ -7,15 +7,15 @@ Neste capítulo são apresentados os conceitos base que envolvem este trabalho. 
 \section{Personas}
 \label{sec:personas}
 
-Nesta seção são apresentados conceitos sobre a técnica de personas. São abordados a definição de personas, suas características, além da composição de um elenco de personas para um projetos.
+Nesta seção são apresentados conceitos sobre a técnica de personas. São abordadas a definição de personas, suas características, além da composição de um elenco de personas para um projeto.
 
 \subsection{Definição de Persona}
-
+\label{sub:def-pers}
 As personas são personagens fictícios, arquétipos hipotéticos de um grupo de usuários reais, criadas para descrever um usuário típico, que são definidas principalmente por seus objetivos \cite{cooper07, pruitt, cooper99}. Embora fictícia, uma \textit{persona} é definida com um rigor de detalhes de forma que represente bem o público real de usuários que farão uso da interface projetada \cite[p. 154]{BarbosaEtAl2021}. Na Figura \ref{Fig:ex-persona.png} é apresentado um exemplo de persona.
 
 \begin{figure}[htbp]
 	\centering
-	\caption{Exemplo de uma persona}
+	\caption{Exemplo de uma Persona}
 	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/metodologia/exemplo-persona.png}
 	\legend{ Fonte: \citeonline{barbosa_silva} }
 	\label{Fig:ex-persona.png}
@@ -28,7 +28,7 @@ Elas se caracterizam por atributos demográficos como sexo e faixa etária, aten
 \begin{itemize}
     \item \textbf{identidade:} para dar mais realismo à persona, é importante que ela tenha um nome, idade, outros dados demográficos e uma foto;
 
-    \item \textbf{status:} define o tipo das personas. Este atributo reflete a prioridade de uma persona classificando-a em primária, secundária, suplementar, cliente, servida ou anti-persona;
+    \item \textbf{status:} define o tipo das personas. Este atributo reflete a prioridade de uma persona classificando-a em primária, secundária ou anti-persona por exemplo;
 
     \item \textbf{objetivos:} condição final a ser atingida, o alvo da persona. Os objetivos de uma persona não se restringem apenas ao produto, podendo ser por exemplo um objetivo pessoal, corporativo, técnico e prático;
 
@@ -49,23 +49,21 @@ Em um projeto podem haver um grupo de personas. Existem tipos distintos de perso
 
 \subsection{Elenco de Personas}
 
-O grupo de personas de um projeto, também chamado de elenco de personas, conta com pelo menos três personas distintas como é definido por \citeonline{Courage_Baxter_2005} e \citeauthor{usability2020}, podendo ser de seis tipos, conforme foi descrito por \citeonline{cooper07}. São estes os tipos de personas:
+O grupo de personas de um projeto, também chamado de elenco de personas, conta com pelo menos três personas distintas como é definido por \citeonline{Courage_Baxter_2005} e \citeauthor{usability2020}. Estão contidas, nos tipos de personas definidos por \citeonline{cooper07}, as seguintes personas:
 
 \begin{itemize}
     \item Primária (\textit{Primary}): esta representa o principal alvo do design. Ela é que tem de ser satisfeita pela interface projetada;
     
     \item Secundária (\textit{Secundary}): esta é satisfeita com a interface projetada para a persona primária, porém a persona secundária necessita de adicionais específicas que podem ser acrescentadas ao design sem prejudicar aquilo que foi projetado para servir à persona primária;
     
-    \item Suplementar (\textit{Supplemental}): ela é uma combinação das personas primárias e secundárias. Suas necessidades são completamente representadas por essa combinação de personas;
+    % \item Suplementar (\textit{Supplemental}): ela é uma combinação das personas primária e secundária. Suas necessidades são completamente representadas por essa combinação de personas;
     
-    \item Cliente (\textit{Customer}): esta persona busca atender às necessidades dos clientes, que não necessariamente são dos usuários finais do sistema;
-    
-    \item Servida (\textit{Served}): este tipo de persona é diferente do tipos de persona já discutidos. Ela não é um usuário do produto; contudo, eles são diretamente afetados pelo uso do produto; e
-    
-    \item Negativa (\textit{Negative}): chamada também de anti-persona, esta persona é usada para comunicar às partes interessadas e demais \textit{stakeholders} que existem tipos específicos de usuários para os quais o produto não foi projetado. 
+    \item Anti-persona (\textit{Negative}): esta persona é usada para comunicar às partes interessadas e demais \textit{stakeholders} que existem tipos específicos de usuários para os quais o produto não foi projetado. 
 \end{itemize}
 
 O elenco de persona é caracterizado por conter ao menos uma persona por papel de usuário sendo que, dentre as personas definidas para cada papel, ao menos uma delas deve ser a persona primária. O ideal é que seja projetada uma interface distinta para cada persona primária \cite[p. 155]{BarbosaEtAl2021}. Por exemplo em um sistema escolar com dois papeis de usuário distintos, como alunos e professores, haveriam pelo menos duas personas primárias (uma representando os professores e outra os alunos), sendo que seria recomendado ser projetado duas interfaces distintas (novamente, uma para os professores e outra para os alunos).
+
+Deve-se haver um certo cuidado na escolha do número de personas elaboradas. \cite{Courage_Baxter_2005} Se houverem muitas personas para representar os grupos de usuários, elas vão confundir os designers e desenvolvedores. No entanto, o elenco deve contemplar os grupos de usuários mais relevantes, ajudando o desenvolvedor a projetar um produto eficaz. Ao limitar a solução a uma única persona, podem ficar de fora dados valiosos de usuários finais que no final não correspondam a um mesmo grupo \cite[p. 155]{BarbosaEtAl2021}.
 
 \section{Jogos para Aprendizagem}
 \label{sec:jogos-aprend}
@@ -89,9 +87,9 @@ O \textit{Playcentric Design Process} (PDP) é um método de desenvolvimento de 
 
 O PDP se baseia num ciclo iterativo, no qual continuamente é prototipado, testado e validado o que foi concebido para o jogo, sempre tendo em vista as metas de experiência \cite[p. 10-11]{Fullerton_2008}. Este método acompanha a visão de IHC que preocupa-se com certos critérios de qualidade da interação entre seres humanos e sistemas digitais \cite[p. 8-10]{BarbosaEtAl2021}.
 
-\citeonline{BarbosaEtAl2021} apontam que ``os critérios de qualidade de uso enfatizam certas características da interação e da interface que as tornam adequadas aos efeitos esperados do uso do sistema". São critérios de qualidade, a usabilidade e a experiência do usuário (UX).
+\citeonline{BarbosaEtAl2021} apontam que ``os critérios de qualidade de uso enfatizam certas características da interação e da interface que as tornam adequadas aos efeitos esperados do uso do sistema''. São critérios de qualidade, a usabilidade e a experiência do usuário (UX).
 
-\citeonline{Petri_Wangenheim_2019} abordam em seus estudos a questão da qualidade em jogos educacionais e trazem como produto de suas pesquisas um modelo denominado Model for the Evaluation of Educational Games (MEEGA+). Este é um instrumento de avaliação da qualidade de jogos no ensino de informática que contempla fatores de usabilidade e experiência do jogador (Anexo \ref{an:meega}).
+\citeonline{Petri_Wangenheim_2019} abordam em seus estudos a questão da qualidade em jogos educacionais e trazem como produto de suas pesquisas um modelo denominado Model for the Evaluation of Educational Games (MEEGA+). Este é um instrumento de avaliação da qualidade de jogos no ensino de computação que contempla fatores de usabilidade e experiência do jogador (Anexo \ref{an:meega}).
 
 Os fatores de qualidade do MEEGA+ ainda são decompostos em dimensões. Estas dimensões descrevem as características dos jogos educacionais que impactam na qualidade deles \cite{Petri_Wangenheim_2019}.
 
@@ -110,7 +108,7 @@ No desenvolvimento de um software estes aspectos de qualidade podem ser traduzid
 
 Nesta seção são apresentados trabalhos que têm algumas similaridades com o presente estudo. Estes envolvem a construção de personas para o desenvolvimento de um jogo, outro para um jogo na educação e ainda um que trata do uso de \textit{survey} para se elaborar personas.
 
-No trabalho de \citeonline{canossa-2009} personas são desenvolvidas com o intuito de solucionar o desafio de integrar o usuário ao design de entretenimento interativo (jogos de computador). Este trabalho utiliza a estrutura introduzida por \citeonline{cooper99}.
+No trabalho de \citeonline{canossa-2009} personas são desenvolvidas com o intuito de solucionar o desafio de integrar o usuário ao design de entretenimento interativo (jogos digitais). Este trabalho utiliza a estrutura introduzida por \citeonline{cooper99}.
 
 As personas desenvolvidas neste estudo são conhecidas também como \textit{play-personas}. Com base num estudo de caso da pesquisa de \citeonline{canossa-2009}, as \textit{play-personas} se mostraram como modelos de hipótese preliminar de comportamento no jogo e uma ferramenta para categorizar e analisar variáveis de métricas de jogo vinculadas ao personagem.
 
